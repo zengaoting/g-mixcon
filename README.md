@@ -27,7 +27,9 @@ pip install torch_geometric==2.5.3
 We use the dataset built in torch_geometric. The dataset will be downloaded automatically.
 
 ### 4. Run Experiments
-
+```
+run the run_gmixcon.sh for $\mathcal{G}$-MixCon
+```
 
 ## Cite Our Paper
 
