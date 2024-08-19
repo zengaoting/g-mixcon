@@ -4,6 +4,8 @@ Graph Neural Networks (GNNs) with data augmentation obtain promising results amo
 
 To the best of our knowledge, this is the first attempt to develop an SCL-based approach for learning graph representations. Specifically, the mixup-based strategy within the latent space during the contrastive learning process is investigated. $GDA_{gl}$ and $GDA_{nl}$ are proposed, which can linearly interpolate between views at either the node or graph level thus achieving a time complexity of $O(d)$ and $O(k\log n)$, respectively. By comparison, the existing best-accuracy method achieves complexity of $O(n^2)$. Furthermore, we design a dual-objective loss function named $SupMixCon$ that can consider both the consistency among graphs and the distances between the original and augmented graph within the latent space. $SupMixCon$ can guide the training process for supervised contrastive learning in $\mathcal{G}$-MixCon while achieving a similarity guarantee. Comprehensive experiments are conducted on datasets from varied domains and sizes, using different GNN architectures. Experimental results show that $\mathcal{G}$-MixCon not only demonstrably enhances performance, achieving an average accuracy increment of 6.24\%, but also significantly increases the robustness of GNNs against noisy labels. 
 
+![framework](./img/framework.png)
+
 ## Run
 ### 1. Requirements
 ```
