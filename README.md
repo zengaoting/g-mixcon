@@ -28,7 +28,7 @@ We use the dataset built in torch_geometric. The dataset will be downloaded auto
 
 ### 4. Run Experiments
 ```
-run the run_gmixcon.sh for $\mathcal{G}$-MixCon
+run the run_gmixcon.sh for G-MixCon
 ```
 
 ## Cite Our Paper
