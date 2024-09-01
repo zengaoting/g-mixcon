@@ -22,11 +22,17 @@ pip install torch-sparse==0.6.17+pt113cu116
 pip install torch-spline-conv==1.2.2+pt113cu116
 pip install torch_geometric==2.3.1
 ```
+### 3. To install dgl-cuda11.6
+```
+conda install dglteam::dgl-cuda11.6
+```
 
-### 3. Data 
+
+
+### 4. Data 
 We use the dataset built in torch_geometric. The dataset will be downloaded automatically.
 
-### 4. Run Experiments
+### 5. Run Experiments
 ```
 run the run_gmixcon.sh for G-MixCon
 ```
