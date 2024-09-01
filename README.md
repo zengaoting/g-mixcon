@@ -9,18 +9,18 @@ To the best of our knowledge, this is the first attempt to develop an SCL-based 
 ## Run
 ### 1. Requirements
 ```
-pytorch==2.4.0
-cuda==12.2
-torch_geometric==2.5.3
+pytorch==1.13
+cuda==11.6
+torch_geometric==2.3.1
 python==3.9
 ```
-### 2. To install torch-geometric==2.5.3
+### 2. To install torch-geometric==2.3.1
 ```
-pip install torch_cluster-1.6.3+pt24cu121-cp39-cp39-linux_x86_64.whl
-pip install torch_scatter-2.1.2+pt24cu121-cp39-cp39-linux_x86_64.whl
-pip install torch_sparse-0.6.18+pt24cu121-cp39-cp39-linux_x86_64.whl
-pip install torch_spline_conv-1.2.2+pt24cu121-cp39-cp39-linux_x86_64.whl
-pip install torch_geometric==2.5.3
+pip install torch-cluster==1.6.1+pt113cu116
+pip install torch-scatter==2.1.1+pt113cu116
+pip install torch-sparse==0.6.17+pt113cu116
+pip install torch-spline-conv==1.2.2+pt113cu116
+pip install torch_geometric==2.3.1
 ```
 
 ### 3. Data 
