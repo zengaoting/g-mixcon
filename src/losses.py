@@ -137,7 +137,6 @@ class SupConMixLoss_N(nn.Module):
 
             if labels.shape[0] != batch_size:
                 raise ValueError('Num of labels does not match num of features')
-            #这个mask代表样本之间的标签是否相同，相同的为1，不同的为0
             mask = torch.eq(labels, labels.T).float().to(device)
         else:
             mask = mask.float().to(device)
