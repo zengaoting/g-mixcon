@@ -290,38 +290,7 @@ def train(encoder_model, criterion,train_loader,optimizer,saliency):
     losses.append(loss.item())
     loss_avg = loss_all / graph_all
     return encoder_model, loss_avg
-# def train(encoder_model, criterion,train_loader,optimizer):
-#     encoder_model.train()
-#     loss_all = 0
-#     graph_all = 0
-#     losses = []
-#     for data in train_loader:
-#         # print( "data.y", data.y )
-#         data = data.to(device)
-#         optimizer.zero_grad()
 
-#         _, _, _, _, g1, g2 = encoder_model(data.x, data.edge_index, data.batch)
-#         g1, g2 = [encoder_model.encoder.project(g) for g in [g1, g2]]
-        
-#         labels = data.y.view(-1, num_classes)
-    
-#         features = torch.stack([g1, g2], dim=1)
-        
-#         loss = criterion(features, labels)
-
-#         loss.backward()
-
-#         torch.nn.utils.clip_grad_norm(encoder_model.parameters(), max_norm=5, norm_type=2)
-#         loss_all += loss.item() * data.num_graphs
-#         graph_all += data.num_graphs
-#         optimizer.step()
-#         # 记录损失值
-#         losses.append(loss.item())
-
-#         # 打印当前损失值
-#         # print(f"Epoch [{epoch + 1}/{num_epochs}] Loss: {loss.item()}")
-#     loss = loss_all / graph_all
-#     return model, loss
 
 @torch.no_grad()
 def test(encoder_model, dataloader):
