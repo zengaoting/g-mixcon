@@ -38,4 +38,13 @@ run the run_gmixcon.sh for G-MixCon
 ```
 
 ## Cite Our Paper
-
+**If you use this code in your research, please cite our paper.**
+```
+@article{zeng2024efficient,
+  title={Efficient and Effective Augmentation Framework With Latent Mixup and Label-Guided Contrastive Learning for Graph Classification},
+  author={Zeng, Aoting and Wang, Liping and Zhang, Wenjie and Lin, Xuemin},
+  journal={IEEE Transactions on Knowledge and Data Engineering},
+  year={2024},
+  publisher={IEEE}
+}
+```
